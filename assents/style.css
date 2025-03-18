@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+    background-color: #F4DDBB;
+}
+.image-logo{ /*mexer na responsividade*/
+    background-image: url(img/logo.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    max-width: 450px;
+    height: 100%;
+    max-height: 500px;
+    position: absolute;
+    left: 50%;
+    top: 50%; 
+    transform: translate(-50%, -50%);
+    transition: transform 1s ease; 
+}
+.image-logo.reveal {
+    transform: translate(-50%, -150%);
+}
+.content{
+    position: relative; 
+    z-index: 1;
+    text-align: center;
+    color: black;
+    display: none;
+}
