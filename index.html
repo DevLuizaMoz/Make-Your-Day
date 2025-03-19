@@ -9,9 +9,432 @@
 </head>
 <body>
     <div class="image-logo" id="imageLogo"></div>
+<!--
+PARA FAZER:
+
+mudar todos os input type="text" para textarea
+    <textarea id="priority" placeholder="Digite sua prioridade aqui" rows="4"></textarea>
+
+    textarea {
+    margin: 0; /* Remove margens padrão */
+    padding: 10px; /* Adiciona preenchimento interno */
+    border: 1px solid #ccc; /* Borda padrão */
+    border-radius: 4px; /* Arredonda os cantos */
+    background-color: #f9f9f9; /* Cor de fundo */
+    color: #333; /* Cor do texto */
+    font-size: 16px; /* Tamanho da fonte */
+    width: 100%; /* Largura total do contêiner */
+    box-shadow: none; /* Remove qualquer sombra padrão */
+    transition: border-color 0.3s, box-shadow 0.3s; /* Transição suave */
+    resize: vertical; /* Permite redimensionar verticalmente */
+    }
+
+    textarea:focus {
+        border-color: #4CAF50; /* Cor da borda ao focar */
+        box-shadow: 0 0 5px rgba(76, 175, 80, 0.5); /* Sombra ao focar */
+        outline: none; /* Remove o contorno padrão */
+    }
+
+    adicionar em todos os input type="checkbox" a class="custom-checkbox"
+
+    mexer no css
+
+    mexer na responsividade
+
+    adicionar o botão para site bilingue
+
+    adicinar o botão para dark e light
+
+
+
+
+    site de refencia: https://worldofprintables.com/weekly-to-do-list-template/
+-->
+
+
+
+
 
     <div class="content" id="content">
-        <p>bom dia</p>
+        <div class="title">
+            <h1>Make Your Day</h1>
+            <h2>Hoje é um ótimo dia para começar!</h2>
+        </div>
+        <div class="section-of-checkbox">
+           <div class="content-priorities">
+                <div class="area-text_priorities">
+                    <h1>Prioridades</h1>
+                </div>
+                <div class="priorities">
+                    <div class="input-group">
+                       <input type="checkbox" name="priority" id="priority1" class="custom-checkbox">
+                    <label for="priority1">
+                        <input type="text" placeholder="Digite sua prioridade aqui" />
+                    </label> 
+                    </div>
+                    <div class="input-group">
+                        <input type="checkbox" name="priority" id="priority2" class="custom-checkbox">
+                    <label for="priority2">
+                        <input type="text" placeholder="Digite sua prioridade aqui" />
+                    </label>
+                    </div>
+                    <div class="input-group">
+                        <input type="checkbox" name="priority" id="priority3" class="custom-checkbox">
+                    <label for="priority3">
+                        <input type="text" placeholder="Digite sua prioridade aqui" />
+                    </label>
+                    </div>
+                    <div class="input-group">
+                        <input type="checkbox" name="priority" id="priority4" class="custom-checkbox">
+                    <label for="priority4">
+                        <input type="text" placeholder="Digite sua prioridade aqui" />
+                    </label>
+                    </div>
+
+                    
+                    <input type="checkbox" name="priority" id="priority5">
+                    <label for="priority5">
+                        <input type="text" placeholder="Digite sua prioridade aqui" />
+                    </label>
+
+                    <input type="checkbox" name="priority" id="priority6">
+                    <label for="priority6">
+                        <input type="text" placeholder="Digite sua prioridade aqui" />
+                    </label>  
+                </div>
+            
+            </div> 
+            <div class="content-to_do">
+                <div class="area-text_to_do">
+                    <h1>Para Fazer</h1>
+                </div>
+                <div class="to_do">
+                    <input type="checkbox" name="to_do" id="to_do1">
+                <label for="to_do1">
+                    <input type="text" placeholder="Para fazer">
+                </label>
+                <input type="checkbox" name="to_do" id="to_do2">
+                <label for="to_do2">
+                    <input type="text" placeholder="Para fazer">
+                </label>
+                <input type="checkbox" name="to_do" id="to_do3">
+                <label for="to_do3">
+                    <input type="text" placeholder="Para fazer">
+                </label>
+                <input type="checkbox" name="to_do" id="to_do4">
+                <label for="to_do4">
+                    <input type="text" placeholder="Para fazer">
+                </label>
+                <input type="checkbox" name="to_do" id="to_do5">
+                <label for="to_do5">
+                    <input type="text" placeholder="Para fazer">
+                </label>
+                <input type="checkbox" name="to_do" id="to_do6">
+                <label for="to_do6">
+                    <input type="text" placeholder="Para fazer">
+                </label>
+                </div>
+            </div>
+        </div>
+
+        <div class="section-of-checkbox_week">
+           <div class="content-week">
+                <div class="content-monday">
+                    <div class="area-text_monday">
+                        <h1>Segunda</h1>
+                    </div>
+                    <div class="monday">
+                    <input type="checkbox" name="monday" id="monday1">
+                    <label for="monday1">
+                        <input type="text" placeholder="Digite seu dia">
+                    </label>
+                    <input type="checkbox" name="monday" id="monday2">
+                    <label for="monday2">
+                        <input type="text" placeholder="Digite seu dia">
+                    </label>
+                    <input type="checkbox" name="monday" id="monday3">
+                    <label for="monday3">
+                        <input type="text" placeholder="Digite seu dia">
+                    </label>
+                    <input type="checkbox" name="monday" id="monday4">
+                    <label for="monday4">
+                        <input type="text" placeholder="Digite seu dia">
+                    </label>
+                    <input type="checkbox" name="monday" id="monday5">
+                    <label for="monday5">
+                        <input type="text" placeholder="Digite seu dia">
+                    </label>
+                    <input type="checkbox" name="monday" id="monday6">
+                    <label for="monday6">
+                        <input type="text" placeholder="Digite seu dia">
+                    </label>
+                    <input type="checkbox" name="monday" id="monday7">
+                    <label for="monday7">
+                        <input type="text" placeholder="Digite seu dia">
+                    </label>
+                    <input type="checkbox" name="monday" id="monday8">
+                    <label for="monday8">
+                        <input type="text" placeholder="Digite seu dia">
+                    </label>
+                    <input type="checkbox" name="monday" id="monday9">
+                    <label for="monday9">
+                        <input type="text" placeholder="Digite seu dia">
+                    </label>
+                    <input type="checkbox" name="monday" id="monday10">
+                    <label for="monday10">
+                        <input type="text" placeholder="Digite seu dia">
+                    </label>
+                </div> 
+                </div>
+                
+                <div class="content-tuesday">
+                    <div class="area-text_tuesday">
+                        <h1>Terça</h1>
+                    </div>
+                    <div class="tuesday">
+                    <input type="checkbox" name="tuesday" id="tuesday1">
+                    <label for="tuesday1">
+                        <input type="text" placeholder="Digite seu dia">
+                    </label>
+                    <input type="checkbox" name="tuesday" id="tuesday2">
+                    <label for="tuesday2">
+                        <input type="text" placeholder="Digite seu dia">
+                    </label>
+                    <input type="checkbox" name="tuesday" id="tuesday3">
+                    <label for="tuesday3">
+                        <input type="text" placeholder="Digite seu dia">
+                    </label>
+                    <input type="checkbox" name="tuesday" id="tuesday4">
+                    <label for="tuesday4">
+                        <input type="text" placeholder="Digite seu dia">
+                    </label>
+                    <input type="checkbox" name="tuesday" id="tuesday5">
+                    <label for="tuesday5">
+                        <input type="text" placeholder="Digite seu dia">
+                    </label>
+                    <input type="checkbox" name="tuesday" id="tuesday6">
+                    <label for="tuesday6">
+                        <input type="text" placeholder="Digite seu dia">
+                    </label>
+                    <input type="checkbox" name="tuesday" id="tuesday7">
+                    <label for="tuesday7">
+                        <input type="text" placeholder="Digite seu dia">
+                    </label>
+                    <input type="checkbox" name="tuesday" id="tuesday8">
+                    <label for="tuesday8">
+                        <input type="text" placeholder="Digite seu dia">
+                    </label>
+                    <input type="checkbox" name="tuesday" id="tuesday9">
+                    <label for="tuesday9">
+                        <input type="text" placeholder="Digite seu dia">
+                    </label>
+                    <input type="checkbox" name="tuesday" id="tuesday10">
+                    <label for="tuesday10">
+                        <input type="text" placeholder="Digite seu dia">
+                    </label>
+                </div>
+                </div>
+                
+                <div class="content-wednesday">
+                    <div class="area-text_wednesday">
+                        <h1>Quarta</h1>
+                    </div>
+                    <div class="wednesday">
+                    <input type="checkbox" name="wednesday" id="wednesday1">
+                    <label for="wednesday1">
+                        <input type="text" placeholder="Digite seu dia">
+                    </label>
+                    <input type="checkbox" name="wednesday" id="wednesday2">
+                    <label for="wednesday2">
+                        <input type="text" placeholder="Digite seu dia">
+                    </label>
+                    <input type="checkbox" name="wednesday" id="wednesday3">
+                    <label for="wednesday3">
+                        <input type="text" placeholder="Digite seu dia">
+                    </label>
+                    <input type="checkbox" name="wednesday" id="wednesday4">
+                    <label for="wednesday4">
+                        <input type="text" placeholder="Digite seu dia">
+                    </label>
+                    <input type="checkbox" name="wednesday" id="wednesday5">
+                    <label for="wednesday5">
+                        <input type="text" placeholder="Digite seu dia">
+                    </label>
+                    <input type="checkbox" name="wednesday" id="wednesday6">
+                    <label for="wednesday6">
+                        <input type="text" placeholder="Digite seu dia">
+                    </label>
+                    <input type="checkbox" name="wednesday" id="wednesday7">
+                    <label for="wednesday7">
+                        <input type="text" placeholder="Digite seu dia">
+                    </label>
+                    <input type="checkbox" name="wednesday" id="wednesday8">
+                    <label for="wednesday8">
+                        <input type="text" placeholder="Digite seu dia">
+                    </label>
+                    <input type="checkbox" name="wednesday" id="wednesday9">
+                    <label for="wednesday9">
+                        <input type="text" placeholder="Digite seu dia">
+                    </label>
+                    <input type="checkbox" name="wednesday" id="wednesday10">
+                    <label for="wednesday10">
+                        <input type="text" placeholder="Digite seu dia">
+                    </label>
+                </div> 
+                </div>
+
+                <div class="content-thursday">
+                    <div class="area-text_thursday">
+                        <h1>Quinta</h1>
+                    </div>
+                    <div class="thursday">
+                    <input type="checkbox" name="thursday" id="thursday1">
+                    <label for="thursday1">
+                        <input type="text" placeholder="Digite seu dia">
+                    </label>
+                    <input type="checkbox" name="thursday" id="thursday2">
+                    <label for="thursday2">
+                        <input type="text" placeholder="Digite seu dia">
+                    </label>
+                    <input type="checkbox" name="thursday" id="thursday3">
+                    <label for="thursday3">
+                        <input type="text" placeholder="Digite seu dia">
+                    </label>
+                    <input type="checkbox" name="thursday" id="thursday4">
+                    <label for="thursday4">
+                        <input type="text" placeholder="Digite seu dia">
+                    </label>
+                    <input type="checkbox" name="thursday" id="thursday5">
+                    <label for="thursday5">
+                        <input type="text" placeholder="Digite seu dia">
+                    </label>
+                    <input type="checkbox" name="thursday" id="thursday6">
+                    <label for="thursday6">
+                        <input type="text" placeholder="Digite seu dia">
+                    </label>
+                    <input type="checkbox" name="thursday" id="thursday7">
+                    <label for="thursday7">
+                        <input type="text" placeholder="Digite seu dia">
+                    </label>
+                    <input type="checkbox" name="thursday" id="thursday8">
+                    <label for="thursday8">
+                        <input type="text" placeholder="Digite seu dia">
+                    </label>
+                    <input type="checkbox" name="thursday" id="thursday9">
+                    <label for="thursday9">
+                        <input type="text" placeholder="Digite seu dia">
+                    </label>
+                    <input type="checkbox" name="thursday" id="thursday10">
+                    <label for="thursday10">
+                        <input type="text" placeholder="Digite seu dia">
+                    </label>
+                </div> 
+                </div>
+
+                <div class="content-friday">
+                    <div class="area-text_friday">
+                        <h1>Sexta</h1>
+                    </div>
+                    <div class="friday">
+                    <input type="checkbox" name="friday" id="friday1">
+                    <label for="friday1">
+                        <input type="text" placeholder="Digite seu dia">
+                    </label>
+                    <input type="checkbox" name="friday" id="friday2">
+                    <label for="friday2">
+                        <input type="text" placeholder="Digite seu dia">
+                    </label>
+                    <input type="checkbox" name="friday" id="friday3">
+                    <label for="friday3">
+                        <input type="text" placeholder="Digite seu dia">
+                    </label>
+                    <input type="checkbox" name="friday" id="friday4">
+                    <label for="fridayy4">
+                        <input type="text" placeholder="Digite seu dia">
+                    </label>
+                    <input type="checkbox" name="friday" id="friday5">
+                    <label for="friday5">
+                        <input type="text" placeholder="Digite seu dia">
+                    </label>
+                    <input type="checkbox" name="friday" id="friday6">
+                    <label for="friday6">
+                        <input type="text" placeholder="Digite seu dia">
+                    </label>
+                    <input type="checkbox" name="friday" id="friday7">
+                    <label for="friday7">
+                        <input type="text" placeholder="Digite seu dia">
+                    </label>
+                    <input type="checkbox" name="friday" id="friday8">
+                    <label for="friday8">
+                        <input type="text" placeholder="Digite seu dia">
+                    </label>
+                    <input type="checkbox" name="friday" id="friday9">
+                    <label for="friday9">
+                        <input type="text" placeholder="Digite seu dia">
+                    </label>
+                    <input type="checkbox" name="friday" id="friday10">
+                    <label for="friday10">
+                        <input type="text" placeholder="Digite seu dia">
+                    </label>
+                </div> 
+                </div>
+
+                <div class="content-weekend">
+                    <div class="area-text_saturday">
+                        <h1>Sábado</h1>
+                    </div>
+                    <div class="saturday">
+                    <input type="checkbox" name="saturday" id="saturday1">
+                    <label for="saturday1">
+                        <input type="text" placeholder="Digite seu dia">
+                    </label>
+                    <input type="checkbox" name="saturday" id="saturday2">
+                    <label for="saturday2">
+                        <input type="text" placeholder="Digite seu dia">
+                    </label>
+                    <input type="checkbox" name="saturday" id="saturday3">
+                    <label for="saturday3">
+                        <input type="text" placeholder="Digite seu dia">
+                    </label>
+                    <input type="checkbox" name="saturday" id="saturday4">
+                    <label for="saturday4">
+                        <input type="text" placeholder="Digite seu dia">
+                    </label>
+                    <input type="checkbox" name="saturday" id="saturday5">
+                    <label for="saturday5">
+                        <input type="text" placeholder="Digite seu dia">
+                    </label>
+
+                    <div class="area-text_sunday">
+                        <h1>Domingo</h1>
+                    </div>
+                    <div class="sunday">
+                    <input type="checkbox" name="sunday" id="sunday1">
+                    <label for="sunday1">
+                        <input type="text" placeholder="Digite seu dia">
+                    </label>
+                    <input type="checkbox" name="sunday" id="sunday2">
+                    <label for="sunday2">
+                        <input type="text" placeholder="Digite seu dia">
+                    </label>
+                    <input type="checkbox" name="sunday" id="sunday3">
+                    <label for="sunday3">
+                        <input type="text" placeholder="Digite seu dia">
+                    </label>
+                    <input type="checkbox" name="sunday" id="sunday4">
+                    <label for="sunday4">
+                        <input type="text" placeholder="Digite seu dia">
+                    </label>
+                    <input type="checkbox" name="sunday" id="sunday5">
+                    <label for="sunday5">
+                        <input type="text" placeholder="Digite seu dia">
+                    </label>
+                </div> 
+                </div> 
+                </div>
+           </div>
+        </div>
+        
     </div>
 
     <script src="assents/script.js"></script>
