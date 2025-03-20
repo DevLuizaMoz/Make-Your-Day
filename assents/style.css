@@ -1,10 +1,15 @@
+:root{
+    --font-padrão: 'Poppins', sans-serif;
+    --font-destaque: 'Oi', sans-serif;
+}
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 body{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--font-padrão);
     background-color: #F4DDBB;
 }
 .image-logo{ /*mexer na responsividade*/
@@ -39,21 +44,40 @@ body{
     align-items: center;
     margin: auto;
     margin-top: 55px;
+    margin-bottom: 55px;
 }
 .title{
     text-align: left;
     padding: 50px;
 }
 .title h1{
+    font-family: var(--font-destaque);
+    color: #BF2604;
+    text-shadow: 
+                -1px -1px 0 #000,  
+                 1px -1px 0 #000,
+                -1px  1px 0 #000,
+                 1px  1px 0 #000;
+    letter-spacing: 5px;
+    font-weight: normal;
     font-size: 2.7rem;
 }
 .title h2{
-    font-size: 1.5rem;
+    font-family: var(--font-padrão);
+    color: #F27405;
+    text-shadow: 
+                -1px -1px 0 #000,  
+                 1px -1px 0 #000,
+                -1px  1px 0 #000,
+                 1px  1px 0 #000;
+    font-size: 1.3rem;
 }
 .section-of-checkbox{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin: 10px; 
+    padding: 10px;
 }
 .content-priorities{
     display: flex;
@@ -62,13 +86,14 @@ body{
     min-width: 300px;
 }
 .area-text_priorities{
-    margin-bottom: 10px;
-    background-color: #F27405;
-    min-width: 100px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid black;
+    text-align: left;
+    min-width: 260px;
     color: black;
-    margin-left: 50px;
-    margin-right: 50px;
-    padding: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 7px;
 }
 .priorities{
     display: flex;
@@ -81,13 +106,14 @@ body{
     min-width: 300px;
 }
 .area-text_to_do{
-    margin-bottom: 10px;
-    background-color: #F27405;
-    min-width: 100px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid black;
+    text-align: left;
+    min-width: 260px;
     color: black;
-    margin-left: 50px;
-    margin-right: 50px;
-    padding: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 7px;
 }
 .to_do{
     display: flex;
@@ -104,35 +130,39 @@ body{
     width: 100%;
 }
 .content-monday, .content-tuesday, .content-wednesday, .content-thursday, .content-friday, .content-weekend {
+    font-size: 1.2rem;
     display: flex;
     flex-direction: column;
-    min-width: 260px;
-    flex: 1 1 260px;
+    min-width: 280px;
+    flex: 1 1 265px;
     margin: 10px; 
     padding: 10px;
-    
 }
 .area-text_monday, .area-text_tuesday, .area-text_wednesday, .area-text_thursday, .area-text_friday, .area-text_saturday, .area-text_sunday {
-    margin-bottom: 10px;
-    background-color: #F27405;
+    margin-bottom: 6px;
     min-width: 100px;
     color: black;
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 7px;
+}
+.monday, .tuesday, .wednesday, .thursday, .friday, .saturday, .sunday{
+    border: 1px solid black;
     padding: 10px;
 }
 .input-group {
     display: flex; 
     align-items: center;
-    margin-left: 50px;
+    margin-left: 10px;
+    margin-top: 5px;
     margin-bottom: 10px;
-    margin-right: 50px;
-    border-bottom: 1px solid black;
+    margin-right: 10px;
+    border-bottom: 2px dotted black;
 }
 .input-group label {
     display: flex; 
     align-items: center;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     border: none;
 }
 input[type="text"] {
@@ -141,8 +171,8 @@ input[type="text"] {
     border: none; 
     outline: none; 
     background: none; 
-    font-size: 14.3px;
-    width: 280px;
+    font-size: 16px;
+    width: 200px;
     box-shadow: none; 
 }
 .custom-checkbox {
@@ -184,4 +214,28 @@ input[type="text"] {
 }
 .custom-checkbox:checked + label:after {
     display: block;
+}
+@media screen and (max-width: 1004px){
+    .content{
+        max-width: 750px;
+    }
+}
+@media screen and (max-width: 817px){
+    .content{
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    .title h1{
+        font-size: 2rem;
+    }
+    .title h2{
+        font-size: 1.3rem;
+    }
+    .content-priorities{
+        min-width: 350px;
+    }
+    .area-text_monday, .area-text_tuesday, .area-text_wednesday, .area-text_thursday, .area-text_friday, .area-text_saturday{
+        margin-top: 10px;
+        margin-bottom: 15px;
+    }
 }
